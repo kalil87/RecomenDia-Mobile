@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity2"
+    app:startDestination="@id/categoriasFragment2">
+
+    <fragment
+        android:id="@+id/perfilFragment2"
+        android:name="com.loginapp.recomendia.fragments.home.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfilFragment2_to_editPerfil"
+            app:destination="@id/editPerfil" />
+        <action
+            android:id="@+id/action_perfilFragment2_to_recomendacionFragment2"
+            app:destination="@id/recomendacionFragment" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_perfilFragment2_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriasFragment2"
+        android:name="com.loginapp.recomendia.fragments.home.CategoriasFragment"
+        android:label="fragment_categorias"
+        tools:layout="@layout/fragment_categorias" >
+        <action
+            android:id="@+id/action_categoriasFragment2_to_subcategoriasFragment"
+            app:destination="@id/subcategoriasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/masBuscadoFragment2"
+        android:name="com.loginapp.recomendia.fragments.home.MasBuscadoFragment"
+        android:label="fragment_mas_buscado"
+        tools:layout="@layout/fragment_mas_buscado" >
+        <action
+            android:id="@+id/action_masBuscadoFragment2_to_recomendacionFragment"
+            app:destination="@id/recomendacionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sugerenciasFragment2"
+        android:name="com.loginapp.recomendia.fragments.home.SugerenciasFragment"
+        android:label="fragment_sugerencias"
+        tools:layout="@layout/fragment_sugerencias" >
+        <action
+            android:id="@+id/action_sugerenciasFragment2_to_recomendacionFragment"
+            app:destination="@id/recomendacionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subcategoriasFragment"
+        android:name="com.loginapp.recomendia.fragments.home.SubcategoriasFragment"
+        android:label="fragment_subcategorias"
+        tools:layout="@layout/fragment_subcategorias" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_subcategoriasFragment_to_recomendacionFragment"
+            app:destination="@id/recomendacionFragment" />
+        <action
+            android:id="@+id/action_subcategoriasFragment_to_categoriasFragment2"
+            app:destination="@id/categoriasFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/recomendacionFragment"
+        android:name="com.loginapp.recomendia.fragments.home.RecomendacionFragment"
+        android:label="fragment_recomendacion"
+        tools:layout="@layout/fragment_recomendacion" >
+        <action
+            android:id="@+id/action_recomendacionFragment_to_subcategoriasFragment"
+            app:destination="@id/subcategoriasFragment" />
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="idSub"
+            app:argType="string" />
+        <argument
+            android:name="message"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="especificaciones"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPerfil"
+        android:name="com.loginapp.recomendia.fragments.home.EditPerfil"
+        android:label="fragment_edit_perfil"
+        tools:layout="@layout/fragment_edit_perfil" >
+        <action
+            android:id="@+id/action_editPerfil_to_perfilFragment2"
+            app:destination="@id/perfilFragment2" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.loginapp.recomendia.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>

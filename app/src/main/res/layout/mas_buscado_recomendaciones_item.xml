@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--CardView that holds the elements
+        of the child RecyclerView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRecomendacionMasBuscado"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="12dp"
+        app:contentPadding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--Image in the CardView-->
+            <!--Here we have already given
+                the source for the ImageView
+                and we will not assign it
+                in the Java code-->
+            <!--So all the ImageViews will
+                hold the same image-->
+            <ImageView
+                android:id="@+id/imgSubcategoriaMasBuscado"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_above="@+id/textSubcategoriaMasBuscado"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textSubcategoriaMasBuscado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

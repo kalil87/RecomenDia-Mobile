@@ -1,0 +1,9 @@
+<!-- res/drawable/edit_text_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#EDEDED" /> <!-- Color de fondo -->
+            <corners android:radius="8dp" /> <!-- Radio de las esquinas -->
+        </shape>
+    </item>
+</layer-list>

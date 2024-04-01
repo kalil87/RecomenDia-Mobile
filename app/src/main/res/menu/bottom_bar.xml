@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/categoriasFragment2"
+        android:icon="@drawable/categorias"
+        android:title="Categorias" />
+
+    <item
+        android:id="@+id/perfilFragment2"
+        android:icon="@drawable/perfil"
+        android:title="Perfil" />
+
+    <item
+        android:id="@+id/masBuscadoFragment2"
+        android:icon="@drawable/lomasbuscado"
+        android:title="Lo mas buscado" />
+
+    <item
+        android:id="@+id/sugerenciasFragment2"
+        android:icon="@drawable/sugerencias"
+        android:title="Sugerencias" />
+
+</menu>

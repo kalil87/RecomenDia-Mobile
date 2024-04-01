@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingrese sus especificaciones, para que la recomendación sea mas adecuada a lo que estas buscando:" />
+
+    <EditText
+        android:id="@+id/especificacionesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:gravity="top"
+        android:hint="Escriba sus especificaciones"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:maxLength="200"
+        android:padding="14dp"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false" />
+
+    <CheckBox
+        android:id="@+id/especificacionesCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No agregar especificaciones" />
+</LinearLayout>
